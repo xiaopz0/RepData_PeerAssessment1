@@ -20,7 +20,6 @@ mydataTS = zoo(mydata[,"steps"], as.Date(newVariable))
 plot(mydataTS, type ="l")
 ```
 
-
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 ```{r}
 myindex = which(mydata[,"steps"] %in% max(mydata[,"steps"], na.rm=T))
